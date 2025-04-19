@@ -1,0 +1,8 @@
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #F3F4F6, #E5E7EB);
+}
+
+.notification-dropdown {
+    z-index: 10;
+}

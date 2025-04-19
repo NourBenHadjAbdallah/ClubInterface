@@ -3,16 +3,12 @@ session_start();
 
 // Redirect if already logged in
 if (isset($_SESSION['user'])) {
-    if ($_SESSION['user']['role'] === 'admin') {
-        header('Location: admin_main.php');
-    } else {
-        header('Location: user_main.php');
-    }
+    header('Location: ' . ($_SESSION['user']['role'] === 'admin' ? 'admin_main.php' : 'user_main.php'));
     exit;
 }
 
 // Include database connection
-require_once 'db_connect.php';
+require_once '../includes/db_connect.php';
 
 // Initialize error message
 $error = '';
@@ -54,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Club Administration</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles/index.css">
     <style>
         .gradient-bg {
             background: linear-gradient(135deg, #6B7280, #1F2937);

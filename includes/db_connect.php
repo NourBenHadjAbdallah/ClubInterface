@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $dbname = 'club';
-$username = 'root'; // XAMPP default MySQL username
-$password = ''; // XAMPP default MySQL password (usually empty)
+$username = 'root';
+$password = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);

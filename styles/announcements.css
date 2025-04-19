@@ -1,0 +1,75 @@
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #6B7280, #1F2937);
+}
+
+/* Announcements Container */
+.announcements-container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Announcement Form */
+.announcement-form {
+    background-color: #F9FAFB;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Announcement Input */
+.announcement-input {
+    margin-top: 0.25rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+    color: #1F2937;
+}
+
+.announcement-input::placeholder {
+    color: #9CA3AF;
+}
+
+.announcement-input:focus {
+    outline: none;
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+/* Announcement Card */
+.announcement-card {
+    background-color: #F9FAFB;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.announcement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Error Message */
+.error-message {
+    background-color: #FEE2E2;
+    color: #B91C1C;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Success Message */
+.success-message {
+    background-color: #DCFCE7;
+    color: #15803D;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}

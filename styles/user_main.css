@@ -1,0 +1,26 @@
+/* Gradient Background */
+.gradient-bg {
+    background: linear-gradient(135deg, #6B7280, #1F2937);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Card */
+.dashboard-card {
+    background-color: #F9FAFB;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
